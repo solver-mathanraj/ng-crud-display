@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "john_doe",
-      "name": "John Doe",
-      "number": "9876543210",
-      "email": "john.doe@example.com"
-    },
-    {
       "id": "2",
       "username": "jane_smith",
       "name": "Jane Smith",
@@ -72,8 +65,8 @@
     },
     {
       "id": "58da",
-      "username": "hai",
-      "name": "i am goo",
+      "username": "appanswamy",
+      "name": "nathan",
       "number": 4235246336,
       "email": "my@gmail.com"
     }

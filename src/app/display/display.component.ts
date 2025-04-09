@@ -20,7 +20,7 @@ export class DisplayComponent implements OnInit {
     try {
       const res: any = await this.apiService.getRecord();
       console.log(res);
-      this.datas = res;
+      this.datas = res.users;
     } catch (e) {
       console.log(e);
     }

@@ -7,7 +7,7 @@ import { firstValueFrom } from 'rxjs';
 })
 export class ApiService {
   constructor(private http: HttpClient) {}
-  baseUrl = 'http://localhost:8080';
+  baseUrl = 'https://ng-crud-api.onrender.com';
 
   postRecord(newData: any) {
     const currentUrl = `${this.baseUrl}/users`;
@@ -21,13 +21,13 @@ export class ApiService {
     const currentUrl = `${this.baseUrl}/users/${id}`;
     return firstValueFrom(this.http.delete(currentUrl));
   }
-
+  // edit
   getDataByid(id: string) {
     const currentUrl = `${this.baseUrl}/users/${id}`;
     return firstValueFrom(this.http.get(currentUrl));
   }
-  updateRecord(id: string,data:any) {
+  updateRecord(id: string, data: any) {
     const currentUrl = `${this.baseUrl}/users/${id}`;
-    return firstValueFrom(this.http.patch(currentUrl,data));
+    return firstValueFrom(this.http.patch(currentUrl, data));
   }
 }
